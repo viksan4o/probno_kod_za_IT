@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="bg">
-<head>  
+<head>
     <meta charset="UTF-8">
-    <title>Ресторант</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
     <link rel="stylesheet" href="projekt.css">
 </head>
 <body>
-<footer>
-    <p> София, бул.Дондуков</p>
-    <iframe 
-  src="https://www.google.com/maps/embed?pb=..."
-  width="100%" 
-  height="300" 
-  style="border:0;" 
-  allowfullscreen="" 
-  loading="lazy">
-</iframe>
-<p><a href="tel:+359888777999">+359 888 777 999</a></p>
-<p>Работно време:<br> Понеделник до Петък от 10:00 до 22:00<br>
-Събота и Неделя от 10:00 до 23:00 </p>  <div>
-    <a href="#">Меню</a> |
-    <a href="#">Резервации</a> |
-    <a href="#">Контакти</a>
-  </div>
 
-  <div>
-    <a href="#">Facebook</a>
+<section class="container">
 
-    <a href="#">Instagram</a>
-  </div>
+    <h1>Свържи се с нас</h1>
+    <p class="subtitle">Имаш въпрос или резервация? Пиши ни.</p>
 
-  <p>© 2026 Restaurant Name</p>
+    <div id="status" class="status"></div>
 
+    <div class="info">
+        <p> София, бул. Дондуков</p>
+        <p> <a href="tel:+35988877999">+359 888 777 999</a></p>
+        <p> contact@restaurant.bg</p>
+    </div>
 
-</footer>
+    <div class="map">
+        <iframe 
+            src="https://www.google.com/maps?q=Sofia%20Dondukov&output=embed"
+            loading="lazy">
+        </iframe>
+    </div>
+
+    <form id="contactForm">
+        <input type="text" placeholder="Вашето име" required>
+        <input type="email" placeholder="Вашият имейл" required>
+        <textarea placeholder="Напишете вашето съобщение..." required></textarea>
+        <button type="submit">Изпрати съобщение</button>
+    </form>
+
+    <p id="message" class="message"></p>
+
+</section>
+
+<script src="contact.js"></script>
 </body>
 </html>
