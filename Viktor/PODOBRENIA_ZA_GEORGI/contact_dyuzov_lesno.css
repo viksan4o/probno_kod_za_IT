@@ -1,0 +1,144 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Georgia', serif;
+    background: #f5f1ea;
+    color: #3b2f2f;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+/* TITLE */
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #2c1f1f;
+}
+
+.subtitle {
+    color: #7a6a5a;
+    margin-bottom: 25px;
+}
+
+/* STATUS */
+.status {
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    background: #efe7dc;
+}
+
+/* INFO */
+.info {
+    margin-bottom: 20px;
+}
+
+.info p {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+.info a {
+    color: #8b5e3c;
+    text-decoration: none;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+/* MAP */
+.map iframe {
+    width: 100%;
+    height: 260px;
+    border: none;
+    border-radius: 12px;
+    margin: 20px 0;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.map iframe:hover {
+    transform: scale(1.01);
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* INPUTS */
+input, textarea {
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: #faf8f5;
+    color: #3b2f2f;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* FOCUS */
+input:focus, textarea:focus {
+    border-color: #c8a27a;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(200,162,122,0.3);
+    outline: none;
+}
+
+/* TEXTAREA */
+textarea {
+    resize: none;
+    height: 130px;
+}
+
+/* BUTTON */
+button {
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    background: #8b5e3c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+button:hover {
+    background: #6f472d;
+    transform: translateY(-2px);
+}
+
+/* MESSAGE */
+.message {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 25px;
+    }
+}
